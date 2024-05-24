@@ -77,9 +77,7 @@ def create_counters(name):
 @app.route("/counters/<name>", methods=["GET"])
 def read_counters(name):
     """Reads a single counter"""
-    app
-    .logger
-    .info(
+    app.logger.info(
         "Request to Read counter: %s...", 
         name
     )

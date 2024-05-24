@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # This must be imported after the Flask app is created
 from service import routes               # pylint:
-from service.common import log_handlers  # pylint: 
+from service.common import log_handlers  # pylint:
 
 log_handlers.init_logging(app, "gunicorn.error")
 
